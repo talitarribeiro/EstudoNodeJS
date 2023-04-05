@@ -1,0 +1,80 @@
+    <div class="container text-center bg-body-tertiary">
+        <div class="row">
+            <div class="col-1">
+                &nbsp;
+            </div>
+            <div class="col bg-primary">
+                <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">SISTEMA WEB</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
+                                <a class="nav-link" href="#">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-1">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                &nbsp;
+            </div>
+            <div class="col bg-white">
+                &nbsp;
+            </div>
+            <div class="col-1">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                &nbsp;
+            </div>
+            <div class="col bg-white">
+                <p class="text-start fs-5">Cadastrar - Agendamento de Potenciais Clientes</p>
+                <p class="text-start fs-6">Sistema Utilizado para agendamento de serviços.</p>
+                <p>
+                    <form action="/cadastrar" method="POST">
+                        <div class="mb-3 text-start">
+                            <label for="lblNome" class="form-label">Nome:</label>
+                            <input type="name" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="lblTelefone" class="form-label">Telefone:</label>
+                            <input type="number" id="telefone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="lblOrigem" class="form-label">Origem:</label>
+                            <select class="form-select" aria-label="Default select example" id="origem" name="origem">
+                                <option value="Celular"selected>Celular</option>
+                                <option value="Whatsaap">Whatsapp</option>
+                                <option value="Telefone Fixo">Telefone Fixo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="lblDataContato" class="form-label">Data do Contato:</label>
+                            <input type="date" class="form-control" id="data_contato" name="data_contato" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="lblobservacao" class="form-label">Observação:</label>
+                            <textarea class="form-control" placeholder="" id="observacao" name="observacao" style="height: 100px"></textarea>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                    </form>
+                </p>
+            </div>
+            <div class="col-1">
+                &nbsp;
+            </div>
+        </div>
+    </div>
